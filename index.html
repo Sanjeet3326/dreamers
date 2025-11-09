@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Tasks — Dreamer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body class="tasks-only-page">
+    <main class="tasks-page">
+      <section class="tasks-panel card">
+        <div class="panel-inner">
+          <header class="tasks-header">
+            <div class="tasks-icon">📄</div>
+            <h1 class="tasks-title">Tasks</h1>
+          </header>
+
+          <div class="tasks-input-row">
+            <input id="task-title" class="tasks-input" type="text" placeholder="Add a new task...">
+            <button id="add-task" class="tasks-add">ADD</button>
+          </div>
+
+          <div class="tasks-controls">
+            <input id="task-search" class="tasks-search" type="search" placeholder="Search tasks...">
+            <div class="tasks-filters">
+              <button class="filter-btn" data-filter="all">All</button>
+              <button class="filter-btn" data-filter="completed">Completed</button>
+            </div>
+          </div>
+
+          <ul id="task-list" class="tasks-list"></ul>
+        </div>
+      </section>
+    </main>
+
+    <!-- Small chat bubble (keeps existing chat link behavior) -->
+    <a id="chat-bubble" href="chat.html" title="Chat" aria-label="Chat">
+      <span class="chat-dot"></span>
+    </a>
+
+    <script src="script.js"></script>
+  </body>
+</html>
